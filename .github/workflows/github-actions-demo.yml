@@ -21,6 +21,7 @@ jobs:
 
     steps:
     - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+    - run: echo "Running a new job right now"
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
